@@ -65,7 +65,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         storybookEnabled: process.env.EXPO_STORYBOOK_ENABLED,
       },
     },
-    owner: 'byndrha',
+    owner: 'robby_indra',
     plugins: [
       'expo-font',
       'expo-image',
