@@ -78,14 +78,18 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         },
       ],
       ['react-native-permissions', { iosPermissions: ['Camera', 'PhotoLibrary', 'MediaLibrary'] }],
-      [
-        '@sentry/react-native',
-        {
-          url: 'https://sentry.io/',
-          project: process.env.EXPO_PUBLIC_SENTRY_PROJECT_NAME,
-          organization: process.env.EXPO_PUBLIC_SENTRY_ORG_NAME,
-        },
-      ],
+      ...(process.env.EXPO_PUBLIC_SENTRY_PROJECT_NAME && process.env.EXPO_PUBLIC_SENTRY_ORG_NAME
+        ? [
+            [
+              '@sentry/react-native',
+              {
+                url: 'https://sentry.io/',
+                project: process.env.EXPO_PUBLIC_SENTRY_PROJECT_NAME,
+                organization: process.env.EXPO_PUBLIC_SENTRY_ORG_NAME,
+              },
+            ] as const,
+          ]
+        : []),
       'expo-web-browser',
       'expo-video',
       '@react-native-community/datetimepicker',
