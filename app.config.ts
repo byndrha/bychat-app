@@ -31,7 +31,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       adaptiveIcon: { foregroundImage: './assets/adaptive-icon.png', backgroundColor: '#ffffff' },
       package: 'id.byndrha.chat',
       permissions: ['android.permission.CAMERA', 'android.permission.RECORD_AUDIO'],
-      googleServicesFile: process.env.EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE ?? './google-services.json',
+      googleServicesFile: process.env.GOOGLE_SERVICES_JSON ?? process.env.EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE ?? './google-services.json',
       intentFilters: [
         {
           action: 'VIEW',
