@@ -89,6 +89,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         },
       ],
       'expo-web-browser',
+      'expo-video',
       '@react-native-community/datetimepicker',
       '@react-native-firebase/app',
       '@react-native-firebase/messaging',
