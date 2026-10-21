@@ -9,13 +9,21 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_CHATWOOT_BASE_URL": "https://chat.byndrha.id",
+        "EXPO_PUBLIC_MINIMUM_CHATWOOT_VERSION": "4.1.0",
+        "EXPO_PUBLIC_APP_SLUG": "bychat",
+        "EXPO_PUBLIC_PROJECT_ID": "7c98583a-8704-4c54-b18d-397c4a41082c",
+        "EXPO_PUBLIC_ANDROID_GOOGLE_SERVICES_FILE": "./google-services.json",
+        "EXPO_PUBLIC_IOS_GOOGLE_SERVICES_FILE": "./GoogleService-Info.plist"
+      }
     }
   },
   "submit": {
     "production": {
       "android": {
-        "track": "internal" // (enum: production, beta, alpha, internal)
+        "track": "internal"
       }
     }
   }
