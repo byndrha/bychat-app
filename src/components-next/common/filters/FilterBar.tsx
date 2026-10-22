@@ -34,9 +34,7 @@ export const FilterBar = ({ allFilters, selectedFilters, onFilterPress }: Filter
   };
 
   const getFilterTitle = (value: BaseFilterOption) => {
-    return i18n.t(
-      `CONVERSATION.FILTERS.${value.type.toUpperCase()}.OPTIONS.${selectedFilters[value.type].toUpperCase()}`,
-    );
+    return i18n.t(`CONVERSATION.FILTERS.${value.type.toUpperCase()}.TITLE`);
   };
 
   return (
@@ -44,19 +42,6 @@ export const FilterBar = ({ allFilters, selectedFilters, onFilterPress }: Filter
       exiting={exiting}
       style={tailwind.style('px-3 pt-2 pb-1.5 h-[46px] flex flex-row')}>
       {allFilters.map((value, index) => {
-        if (value.type === 'inbox_id') {
-          return (
-            <Animated.View
-              layout={LinearTransition.springify().mass(1).stiffness(115).damping(18)}
-              key={index}
-              style={tailwind.style('pr-2')}>
-              <FilterButton
-                handleOnPress={() => onFilterPress(value.type)}
-                value={value.options[selectedFilters[value.type] as keyof typeof value.options]}
-              />
-            </Animated.View>
-          );
-        }
         return (
           <Animated.View
             layout={LinearTransition.springify().mass(1).stiffness(115).damping(18)}

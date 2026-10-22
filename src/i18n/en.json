@@ -93,7 +93,7 @@
         }
       },
       "STATUS": {
-        "TITLE": "Filter by status",
+        "TITLE": "Status",
         "OPTIONS": {
           "OPEN": "Open",
           "PENDING": "Pending",
@@ -103,12 +103,15 @@
         }
       },
       "ASSIGNEE_TYPE": {
-        "TITLE": "Filter by assignee type",
+        "TITLE": "Type",
         "OPTIONS": {
           "ME": "Me",
           "UNASSIGNED": "Unassigned",
           "ALL": "All"
         }
+      },
+      "INBOX_ID": {
+        "TITLE": "Channel"
       }
     },
     "ASSIGNEE": {

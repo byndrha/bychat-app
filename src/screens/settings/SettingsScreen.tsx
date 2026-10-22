@@ -248,14 +248,6 @@ const SettingsScreen = () => {
       subtitleType: 'light',
       onPressListItem: openURL,
     },
-    {
-      hasChevron: true,
-      title: i18n.t('SETTINGS.CHAT_WITH_US'),
-      icon: <ByChatIcon />,
-      subtitle: '',
-      subtitleType: 'light',
-      onPressListItem: () => toggleWidget(true),
-    },
   ];
 
   return (

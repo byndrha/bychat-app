@@ -55,6 +55,37 @@
     "MINE": "Saya",
     "UN_ASSIGNED": "Belum Diambil",
     "ALL": "Semua",
+    "FILTERS": {
+      "ASSIGNEE_TYPE": {
+        "TITLE": "Tipe",
+        "OPTIONS": {
+          "ME": "Saya",
+          "ALL": "Semua",
+          "UNASSIGNED": "Belum Diambil"
+        }
+      },
+      "STATUS": {
+        "TITLE": "Status",
+        "OPTIONS": {
+          "OPEN": "Terbuka",
+          "ALL": "Semua",
+          "PENDING": "Tertunda",
+          "SNOOZED": "Ditunda",
+          "RESOLVED": "Diselesaikan"
+        }
+      },
+      "SORT_BY": {
+        "TITLE": "Urutkan",
+        "OPTIONS": {
+          "LATEST": "Terbaru",
+          "SORT_ON_CREATED_AT": "Dibuat Pada",
+          "SORT_ON_PRIORITY": "Prioritas"
+        }
+      },
+      "INBOX_ID": {
+        "TITLE": "Saluran"
+      }
+    },
     "EMPTY": "Tidak ada percakapan aktif di grup ini.",
     "PICTURE_CONTENT": "Pesan gambar",
     "ATTACHMENT_CONTENT": "Lampiran File",
@@ -68,7 +99,7 @@
     "FILE_SIZE_LIMIT": "File melebihi batas lampiran 5MB",
     "SHARE": "Bagikan percakapan",
     "CANCEL": "Batal",
-    "PRIVATE_MSG_INPUT": "Ini hanya akan terlihat oleh Agen",
+    "PRIVATE_MSG_INPUT": "Ini hanya akan terlihat oleh Narahubung",
     "UN_ASSIGN": "Menghapus penetapan percakapan",
     "MUTE_CONVERSATION": "Bisukan percakapan",
     "UNMUTE_CONVERSATION": "Menyalakan suara percakapan",
@@ -139,10 +170,10 @@
   "CONVERSATION_ACTION": {
     "TITLE": "Tindakan",
     "OPTIONS": {
-      "OPEN": "Open",
-      "PENDING": "Pending",
-      "SNOOZED": "Snooze",
-      "RESOLVED": "resolve"
+      "OPEN": "Terbuka",
+      "PENDING": "Tertunda",
+      "SNOOZED": "Ditunda",
+      "RESOLVED": "Diselesaikan"
     }
   },
   "CONVERSATION_LABELS": {
@@ -153,7 +184,7 @@
     "UPDATE_LABEL": "Label berhasil diperbarui"
   },
   "AGENT": {
-    "TITLE": "Pilih Agen"
+    "TITLE": "Pilih Narahubung"
   },
   "TEAMS": {
     "TITLE": "Pilih Tim",
